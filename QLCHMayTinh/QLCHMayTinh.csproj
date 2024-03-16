@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A13AF71-54DD-4105-B0C5-591133F08190}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLCHMayTinh</RootNamespace>
+    <AssemblyName>QLCHMayTinh</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_CTHDNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CTHDNhap.Designer.cs">
+      <DependentUpon>Frm_CTHDNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CTHDXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CTHDXuat.Designer.cs">
+      <DependentUpon>Frm_CTHDXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_HDnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_HDnhap.Designer.cs">
+      <DependentUpon>Frm_HDnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Khachhang.Designer.cs">
+      <DependentUpon>Frm_Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Khohang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Khohang.Designer.cs">
+      <DependentUpon>Frm_Khohang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_KQThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_KQThongKe.Designer.cs">
+      <DependentUpon>Frm_KQThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_login.Designer.cs">
+      <DependentUpon>Frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Nhacungcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Nhacungcap.Designer.cs">
+      <DependentUpon>Frm_Nhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Nhanvien.Designer.cs">
+      <DependentUpon>Frm_Nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Phieuxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Phieuxuat.Designer.cs">
+      <DependentUpon>Frm_Phieuxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sanpham.Designer.cs">
+      <DependentUpon>Frm_Sanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Thongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Thongke.Designer.cs">
+      <DependentUpon>Frm_Thongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThongkedoanhsoNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongkedoanhsoNV.Designer.cs">
+      <DependentUpon>Frm_ThongkedoanhsoNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThongkeDSSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongkeDSSP.Designer.cs">
+      <DependentUpon>Frm_ThongkeDSSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThongkePTDSKHTheoTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongkePTDSKHTheoTinh.Designer.cs">
+      <DependentUpon>Frm_ThongkePTDSKHTheoTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThongkeSLHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongkeSLHang.Designer.cs">
+      <DependentUpon>Frm_ThongkeSLHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Timkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Timkiem.Designer.cs">
+      <DependentUpon>Frm_Timkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCT_MAYTINHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINHDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINHDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINHDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINHDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINHDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINHDataSet_forPTMuahang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINHDataSet_forPTMuahang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCT_MAYTINH_DTS_ForPTTT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCT_MAYTINH_DTS_ForPTTT.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_CTHDNhap.resx">
+      <DependentUpon>Frm_CTHDNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CTHDXuat.resx">
+      <DependentUpon>Frm_CTHDXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_HDnhap.resx">
+      <DependentUpon>Frm_HDnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Khachhang.resx">
+      <DependentUpon>Frm_Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Khohang.resx">
+      <DependentUpon>Frm_Khohang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_KQThongKe.resx">
+      <DependentUpon>Frm_KQThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_login.resx">
+      <DependentUpon>Frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Nhacungcap.resx">
+      <DependentUpon>Frm_Nhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Nhanvien.resx">
+      <DependentUpon>Frm_Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Phieuxuat.resx">
+      <DependentUpon>Frm_Phieuxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sanpham.resx">
+      <DependentUpon>Frm_Sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Thongke.resx">
+      <DependentUpon>Frm_Thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThongkedoanhsoNV.resx">
+      <DependentUpon>Frm_ThongkedoanhsoNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThongkeDSSP.resx">
+      <DependentUpon>Frm_ThongkeDSSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThongkePTDSKHTheoTinh.resx">
+      <DependentUpon>Frm_ThongkePTDSKHTheoTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThongkeSLHang.resx">
+      <DependentUpon>Frm_ThongkeSLHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Timkiem.resx">
+      <DependentUpon>Frm_Timkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLCT_MAYTINHDataSet.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet1.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet1.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet2.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet2.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet3.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet3.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet4.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet4.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet5.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet5.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet_forPTMuahang.xsc">
+      <DependentUpon>QLCT_MAYTINHDataSet_forPTMuahang.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet_forPTMuahang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINHDataSet_forPTMuahang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINHDataSet_forPTMuahang.xss">
+      <DependentUpon>QLCT_MAYTINHDataSet_forPTMuahang.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINH_DTS_ForPTTT.xsc">
+      <DependentUpon>QLCT_MAYTINH_DTS_ForPTTT.xsd</DependentUpon>
+    </None>
+    <None Include="QLCT_MAYTINH_DTS_ForPTTT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCT_MAYTINH_DTS_ForPTTT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCT_MAYTINH_DTS_ForPTTT.xss">
+      <DependentUpon>QLCT_MAYTINH_DTS_ForPTTT.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icon_Image\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icon_Image\home-4-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icon_Image\line-chart-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icon_Image\home-4-fill.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

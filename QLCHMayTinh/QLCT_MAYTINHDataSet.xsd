@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLCT_MAYTINHDataSet" targetNamespace="http://tempuri.org/QLCT_MAYTINHDataSet.xsd" xmlns:mstns="http://tempuri.org/QLCT_MAYTINHDataSet.xsd" xmlns="http://tempuri.org/QLCT_MAYTINHDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLCT_MAYTINHConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLCT_MAYTINHConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLCHMayTinh.Properties.Settings.GlobalReference.Default.QLCT_MAYTINHConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PTMUAHANGTableAdapter" GeneratorDataComponentClassName="PTMUAHANGTableAdapter" Name="PTMUAHANG" UserDataComponentName="PTMUAHANGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLCT_MAYTINHConnectionString (Settings)" DbObjectName="QLCT_MAYTINH.dbo.PTMUAHANG" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TENPTMH FROM dbo.PTMUAHANG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TENPTMH" DataSetColumn="TENPTMH" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLCT_MAYTINHDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLCT_MAYTINHDataSet" msprop:Generator_DataSetName="QLCT_MAYTINHDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PTMUAHANG" msprop:Generator_RowEvHandlerName="PTMUAHANGRowChangeEventHandler" msprop:Generator_RowDeletedName="PTMUAHANGRowDeleted" msprop:Generator_RowDeletingName="PTMUAHANGRowDeleting" msprop:Generator_RowEvArgName="PTMUAHANGRowChangeEvent" msprop:Generator_TablePropName="PTMUAHANG" msprop:Generator_RowChangedName="PTMUAHANGRowChanged" msprop:Generator_RowChangingName="PTMUAHANGRowChanging" msprop:Generator_TableClassName="PTMUAHANGDataTable" msprop:Generator_RowClassName="PTMUAHANGRow" msprop:Generator_TableVarName="tablePTMUAHANG" msprop:Generator_UserTableName="PTMUAHANG">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENPTMH" msprop:Generator_ColumnPropNameInRow="TENPTMH" msprop:Generator_ColumnPropNameInTable="TENPTMHColumn" msprop:Generator_ColumnVarNameInTable="columnTENPTMH" msprop:Generator_UserColumnName="TENPTMH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
